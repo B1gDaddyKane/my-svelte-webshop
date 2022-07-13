@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+h1,h2,h3,h4,a,p,li {
+    font-family: 'Indie Flower', monospace;
+    font-weight: normal;
+}
