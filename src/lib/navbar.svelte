@@ -1,19 +1,6 @@
-<nav>
-	<div class="center">
-		<a href="/"><h2>Hjem</h2></a>
-		<a href="/about"><h2>Om os</h2></a>
+<nav class="w-full container">
+	<div class="flex items-center justify-center">
+		<a class="m-1 no-underline" href="/"><h1 class="font-bold text-lg">Hjem</h1></a>
+		<a class="m-1" href="/about"><h2 class="font-bold text-lg">Om os</h2></a>
 	</div>
 </nav>
-
-<style>
-	nav {
-		width: 100%;
-	}
-	a {
-		margin: 1rem;
-		text-decoration: none;
-	}
-	h2 {
-		font-weight: bold;
-	}
-</style>

@@ -1,18 +1,14 @@
 <script>
 	import Navbar from '$lib/navbar.svelte';
-	import '../styles/base.css';
+	import '../app.css';
 </script>
 
-<header class="center">
+<header>
 	<Navbar />
 </header>
-<main>
+<main class="min">
 	<slot />
 </main>
-<footer class="center"><h3>Copywright 2022 Veseltoft</h3></footer>
-
-<style>
-	header {
-		background: lavender;
-	}
-</style>
+<footer class="w-full bottom-0 absolute flex items-center justify-center">
+	<h3>Copywright 2022 Veseltoft</h3>
+</footer>
