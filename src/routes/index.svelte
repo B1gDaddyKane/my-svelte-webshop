@@ -1,5 +1,5 @@
-<div class="container">
-	<div class="flex items-center justify-center">
-		<p class="text-base">Test</p>
-	</div>
-</div>
+<script>
+	import Imageslider from '$lib/main/imageslider.svelte';
+</script>
+
+<Imageslider />

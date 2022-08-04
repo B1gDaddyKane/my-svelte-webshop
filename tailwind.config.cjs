@@ -4,8 +4,18 @@ module.exports = {
   content: ["./src/**/*.{html,ts,svelte,js}"],
   theme: {
     extend: {
+      screens: {
+        xs: "425px"
+      },
       colors: {
-
+        bkg: "#eeded3",
+        accent: "#f798b5",
+        muted: "#826c55"
+      },
+      dropShadow: {
+        "text-sm": "1px 1px 0px rgba(0,0,0,0.90)",
+        "text-md": "1px 2px 0px rgba(0,0,0,0.90)",
+        "text-lg": "1px 4px 0px rgba(0,0,0,0.90)",
       },
       container: {
         center: true,
