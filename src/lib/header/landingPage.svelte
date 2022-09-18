@@ -3,15 +3,17 @@
 </script>
 
 <div class="absolute bg-gradient-to-b inset-0 bottom-3/4 from-bkg to-transparent" />
-<div class="absolute bg-gradient-to-t inset-0 -bottom-22 top-3/4 -z-10 from-bkg to-transparent" />
+<div
+	class="absolute bg-gradient-to-t inset-0 -bottom-41 top-3/4 from-bkg to-transparent distance-1"
+/>
 <img
-	class="absolute h-full w-full -z-20 object-cover object-center"
+	class="absolute h-full w-full -z-20 object-cover object-center distance-1"
 	{src}
 	alt="Baggrundsbillede"
 	aria-hidden
 />
 <h1
-	class="text-5xl text-center font-bold drop-shadow-text-sm lg:drop-shadow-text-lg text-accent tracking-wide py-10"
+	class="text-5xl text-center font-bold drop-shadow-text-sm lg:drop-shadow-text-lg text-accent tracking-wide py-10 distance-2"
 >
 	Sjælfulde fund
 </h1>
@@ -19,10 +21,10 @@
 	class="bg-bkg text-accent font-medium py-3 px-8 rounded-full border
         border-accent focus:outline-none focus-visible:ring-2 
         ring-bkg ring-offset-bkg ring-offset-2 hover:bg-bkg/90 
-        flex gap-2 transition-shadow"
-	href="/"
+        flex gap-2 transition-shadow distance-2"
+	href="/fund"
 >
-	Gå til møbler
+	Gør et fund
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width="24"

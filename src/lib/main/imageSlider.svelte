@@ -2,12 +2,12 @@
 	import { onMount } from 'svelte';
 
 	const images = [
-		{ path: 'images/field.jpg', text: 'Test billede' },
-		{ path: 'images/flowers_table.jpg', text: 'Test billede 2' },
-		{ path: 'images/pink_flowers.jpg', text: 'Test billede 3' },
-		{ path: 'images/field.jpg', text: 'Test billede 4' },
-		{ path: 'images/flowers_table.jpg', text: 'Test billede 5' },
-		{ path: 'images/pink_flowers.jpg', text: 'Test billede 6' }
+		{ path: 'images/IMG_1623.jpg', text: 'Test billede' },
+		{ path: 'images/IMG_1632.jpg', text: 'Test billede 2' },
+		{ path: 'images/IMG_1636.jpg', text: 'Test billede 3' },
+		{ path: 'images/IMG_1660.jpg', text: 'Test billede 4' },
+		{ path: 'images/IMG_1663.jpg', text: 'Test billede 5' },
+		{ path: 'images/IMG_1666.jpg', text: 'Test billede 6' }
 	];
 
 	let slideContainer: HTMLElement;
@@ -59,10 +59,7 @@
 			<p class="text-muted max-w-2xl drop-shadow-text-sm">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet neque augue, non
 				luctus urna porta in. Sed non euismod orci, vel blandit dolor. Quisque elementum est at nisl
-				finibus sagittis. Nunc ut posuere sem. Aenean ullamcorper rhoncus sem, vel malesuada tortor
-				volutpat sed. Nam ac feugiat lacus. Nam eu nulla sagittis, rhoncus tortor non, pellentesque
-				sem. Etiam consequat dui in dapibus pellentesque. Vestibulum nec metus nunc. Donec maximus
-				tortor at fermentum consequat.
+				finibus sagittis.
 			</p>
 			<div class="flex gap-4">
 				<button

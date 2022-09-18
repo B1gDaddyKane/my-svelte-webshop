@@ -9,7 +9,7 @@ module.exports = {
       },
       colors: {
         bkg: "#eeded3",
-        accent: "#f798b5",
+        accent: "#f292a5",
         muted: "#826c55"
       },
       dropShadow: {

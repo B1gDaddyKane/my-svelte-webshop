@@ -12,8 +12,10 @@
 	%sveltekit.head%
 </head>
 
-<body class="bg-bkg text-base">
-	<div>%sveltekit.body%</div>
+<body class="bg-bkg text-base overflow-hidden selection:bg-accent selection:text-bkg">
+	<div class="h-screen pb-12 sm:pb-0 overflow-y-auto overflow-x-hidden relative scroll-smooth perspective">
+		%sveltekit.body%
+	</div>
 </body>
 
 </html>
