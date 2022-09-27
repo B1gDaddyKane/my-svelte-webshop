@@ -1,6 +1,19 @@
-export interface Product{
+import type { Record } from "pocketbase"
+
+export interface Product extends Record {
     name: string,
-    path: string,
     price: number,
-    description: string
+    description: string,
+    images: string[],
+    instagram: string,
+    sold: boolean,
+    tags: string[],
+    id: string,
+}
+
+export interface ProductList {
+    page: number,
+    perPage: number,
+    totalItems: number,
+    items: Record[]
 }

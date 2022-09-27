@@ -1,14 +1,7 @@
 <script lang="ts">
+	import type { Product } from 'src/models/product.model';
 	import { onMount } from 'svelte';
-
-	const images = [
-		{ path: 'images/IMG_1623.jpg', text: 'Test billede' },
-		{ path: 'images/IMG_1632.jpg', text: 'Test billede 2' },
-		{ path: 'images/IMG_1636.jpg', text: 'Test billede 3' },
-		{ path: 'images/IMG_1660.jpg', text: 'Test billede 4' },
-		{ path: 'images/IMG_1663.jpg', text: 'Test billede 5' },
-		{ path: 'images/IMG_1666.jpg', text: 'Test billede 6' }
-	];
+	export let products: Product[];
 
 	let slideContainer: HTMLElement;
 	let slides: NodeListOf<Element>;
@@ -137,19 +130,19 @@
 </section>
 <div class="-mt-10 sm:-mt-20 lg:-mt-36 container xs:w-screen">
 	<div bind:this={slideContainer} class="flex transition-transform duration-500">
-		{#each images as image}
+		{#each products as product}
 			<div data-slide class="relative w-full xs:w-auto flex-grow flex-shrink-0 xs:basis-96 pr-4">
 				<img
 					class="object-cover h-full [@media(hover:hover)]: peer"
-					src={image.path}
-					alt={image.text}
+					src={'http://127.0.0.1:8090/api/files/products/' + product.id + '/' + product.images[0]}
+					alt={product.name}
 					on:dragstart={() => false}
 				/>
 				<p
 					class="absolute bottom-4 left-4 px-4 py-4 bg-bkg font-bold text-lg pointer-events-none tracking-wide 
 					[@media(hover:hover)]:opacity-0 peer-hover:opacity-100 transition-opacity"
 				>
-					{image.text}
+					{product.name}
 				</p>
 			</div>
 		{/each}

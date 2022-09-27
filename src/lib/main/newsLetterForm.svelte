@@ -1,6 +1,4 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
-
 	let disabled: boolean = false;
 	let email: string = '';
 	let hidden: boolean = false;
