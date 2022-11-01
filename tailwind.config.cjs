@@ -12,6 +12,12 @@ module.exports = {
         accent: "#f292a5",
         muted: "#826c55"
       },
+      width: {
+        100: "860px"
+      },
+      height: {
+        100: "475px"
+      },
       dropShadow: {
         "text-sm": "1px 1px 0px rgba(0,0,0,0.90)",
         "text-md": "1px 2px 0px rgba(0,0,0,0.90)",

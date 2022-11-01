@@ -4,7 +4,7 @@
 
 <div class="absolute bg-gradient-to-b inset-0 bottom-3/4 from-bkg to-transparent" />
 <div
-	class="absolute bg-gradient-to-t inset-0 -bottom-41 top-1/2 from-bkg to-transparent distance-1"
+	class="absolute bg-gradient-to-t inset-0 -bottom-41 top-1/4 2xl:top-1/2 from-bkg to-transparent distance-1"
 />
 <img
 	class="absolute h-full w-full -z-20 object-cover object-center distance-1"

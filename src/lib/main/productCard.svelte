@@ -4,18 +4,19 @@
 	export let product: Product;
 </script>
 
-<div class="relative justify-between m-3">
+<div class="relative w-full xs:w-auto flex-grow flex-shrink-0 xs:basis-96 pr-4">
 	<a href="/fund/{product.id}">
 		<img
-			class="rounded-lg object-fill h-96 w-full"
+			class="object-cover h-full [@media(hover:hover)]: peer cursor-pointer"
 			src={'http://127.0.0.1:8090/api/files/products/' + product.id + '/' + product.images[0]}
 			alt={product.name}
+			on:dragstart={() => false}
 		/>
-		<div class="p-3 bg-white/60 absolute bottom-0 w-full rounded-b-lg">
-			<h5 class="mb-2 text-xl font-bold tracking-tight text-accent">{product.name}</h5>
-			<div class="flex justify-between items-center">
-				<span class="text-lg font-bold text-muted">{product.price} kr.</span>
-			</div>
-		</div>
+		<p
+			class="absolute bottom-4 left-4 px-4 py-4 bg-bkg font-bold text-md pointer-events-none tracking-wide 
+						[@media(hover:hover)]:opacity-0 peer-hover:opacity-100 transition-opacity"
+		>
+			{product.name}
+		</p>
 	</a>
 </div>
