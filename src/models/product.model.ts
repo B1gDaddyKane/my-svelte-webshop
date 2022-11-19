@@ -1,4 +1,5 @@
 import type { Record } from "pocketbase"
+import type { Stripe } from "@stripe/stripe-js"
 
 export interface Product extends Record {
     name: string,
@@ -16,4 +17,8 @@ export interface ProductList {
     perPage: number,
     totalItems: number,
     items: Record[]
+}
+
+export type stripeContext = {
+    getStripe: () => Stripe | null
 }
