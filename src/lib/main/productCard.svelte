@@ -8,7 +8,10 @@
 	<a href="/fund/{product.id}">
 		<img
 			class="object-cover h-full [@media(hover:hover)]: peer cursor-pointer"
-			src={'http://127.0.0.1:8090/api/files/products/' + product.id + '/' + product.images[0]}
+			src={'https://sjaelfulde-fund.fly.dev/api/files/products/' +
+				product.id +
+				'/' +
+				product.images[0]}
 			alt={product.name}
 			on:dragstart={() => false}
 		/>

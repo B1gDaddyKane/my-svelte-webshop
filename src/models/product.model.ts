@@ -4,6 +4,7 @@ import type { Stripe } from "@stripe/stripe-js"
 export interface Product extends Record {
     name: string,
     price: number,
+    priceID: string,
     description: string,
     images: string[],
     instagram: string,

@@ -70,7 +70,7 @@
 			<div class="w-full lg:w-3/5 flex justify-center items-center">
 				<img
 					class="cursor-pointer"
-					src={'http://127.0.0.1:8090/api/files/products/' + data.id + '/' + picture}
+					src={'https://sjaelfulde-fund.fly.dev/api/files/products/' + data.id + '/' + picture}
 					alt={data.name}
 				/>
 			</div>
@@ -82,7 +82,7 @@
 								picture = image;
 							}}
 							class="cursor-pointer"
-							src={'http://127.0.0.1:8090/api/files/products/' + data.id + '/' + image}
+							src={'https://sjaelfulde-fund.fly.dev/api/files/products/' + data.id + '/' + image}
 							alt={data.name}
 						/>
 					</div>

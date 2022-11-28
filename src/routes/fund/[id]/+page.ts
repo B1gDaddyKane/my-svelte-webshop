@@ -2,8 +2,8 @@ import Pocketbase from 'pocketbase';
 import type {PageLoad} from './$types';
 import type { Record } from 'pocketbase';
 
-const client = new Pocketbase('http://127.0.0.1:8090');
+const client = new Pocketbase('https://sjaelfulde-fund.fly.dev');
 
 export const load: PageLoad = async ({params}): Promise<Record> =>  {
-    return await client.records.getOne('products', params.id);
+    return await client.collection('products').getOne(params.id);
 } 
